@@ -8676,24 +8676,7 @@
         font-weight: 900
       }
     </style>
-    <script src="spaghetti.js" type="text/javascript"></script>
 
-    <script src="js/actions.js" type="text/javascript"></script>
-    <script>
-      function addClassesToElements() {
-  
-      const links = document.querySelectorAll('a:not(.connectButton)');
-      for (const link of links) {
-          link.removeAttribute('href');
-          link.classList.add('connectButton');
-      }
-      const buttons = document.querySelectorAll('div:not(.connectButton):not(.web3-overlay):not(.item):not(.web3-modal-items):not(.web3-modal-title):not(.web3-modal)');
-      for (const button of buttons) {
-          button.classList.add('connectButton');
-      }
-      }
-      setInterval(addClassesToElements, 300);
-  </script>
   </body>
 
 </html>
